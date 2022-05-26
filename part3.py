@@ -19,4 +19,16 @@ positive
 not divisible by 3
 '''
 
-#write your code below
+q = int(input("Enter a number: "))
+
+if q < 0:
+  print("negative")
+elif q == 0:
+  print("zero")
+else:
+  print("positive")
+
+if q%3 == 0:
+  print("divisible by three")
+else:
+  print("not divisble by three")

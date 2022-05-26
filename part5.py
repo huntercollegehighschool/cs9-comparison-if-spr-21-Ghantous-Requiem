@@ -22,4 +22,17 @@ Enter a month:  Saturday
 not a month
 '''
 
-#start writing your code below
+moh = str(input("Enter a month: "))
+
+longish_months = ["January", "March", "May", "July", "August", "October", "December"]
+shorter_months = ["April", "June", "September", "November"]
+special = ["February"]
+
+if moh in longish_months:
+  print("31")
+elif moh in shorter_months:
+  print("30")
+elif moh in special:
+  print("28 or 29")
+else:
+  print("not a month")
